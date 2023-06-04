@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileCongreso.SeleccionConferenia"
+             Icon="eventos.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#f7cd6a" Padding="24" CornerRadius="0">
+                <Label Text="Agenda del Congreso" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+            </Frame>
+            <ListView x:Name="myListView" ItemSelected="myListView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Height="40">
+                            <StackLayout Orientation="Horizontal" Padding="20">
+                                <StackLayout HorizontalOptions="StartAndExpand" HeightRequest="200" Spacing="40">
+                                    <Label Text="{Binding Nombre}"></Label>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    

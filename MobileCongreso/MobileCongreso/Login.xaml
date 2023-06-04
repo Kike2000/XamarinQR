@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileCongreso.Login"
+             Title="Login"
+             BackgroundColor="#f7cd6a">
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+
+            <Image  x:Name="resourceImage" WidthRequest="180" HeightRequest="180"></Image>
+
+            <Frame OutlineColor="white"
+                   BackgroundColor="Transparent"
+                   Margin="2"
+                   Padding="25,0,25,0"
+                   HeightRequest="60"
+                   CornerRadius="50">
+                <Entry x:Name="txtCorreo" Placeholder="Correo" TextColor="white" FontSize="12" ></Entry>
+            </Frame>
+            <Frame OutlineColor="white"
+                   BackgroundColor="Transparent"
+                   Margin="2"
+                   Padding="25,0,25,0"
+                   HeightRequest="60"
+                   CornerRadius="50">
+                <Entry x:Name="txtContraseña" IsPassword="true" Placeholder="Contraseña" TextColor="white" FontSize="12" ></Entry>
+            </Frame>
+
+            <Button VerticalOptions="Center" BorderWidth="1.5" BackgroundColor="Transparent" CornerRadius="50" BorderColor="Black" Text="Login" x:Name="btnScannerQR" Clicked="btnLogin_Clicked" Margin="20,20,20,20"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

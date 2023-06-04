@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileCongreso.ConferenciaSeleccionada"
+             Title="Conferencias">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#f7cd6a" Padding="24" CornerRadius="0">
+                <Label Text="Lector de Código QR" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+            </Frame>
+            <Button x:Name="btnScannerQR" Clicked="btnScannerQR_Clicked" Margin="20,20,20,20" Text="Leer QR"></Button>
+            <Label Text="Conferencia"></Label>
+            <Entry IsEnabled="False" x:Name="txtConferencia"></Entry>
+            <Label Text="Participante"></Label>
+            <Entry IsEnabled="False" x:Name="txtParticipante"></Entry>
+            <Frame BackgroundColor="LightGreen" Padding="24" CornerRadius="0">
+                <Entry x:Name="txtResultado" HorizontalTextAlignment="Center" TextColor="Black" FontSize="18" ></Entry>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
